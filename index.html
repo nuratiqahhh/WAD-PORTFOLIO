@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Siti Nuratiqah | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Siti Nuratiqah</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="modeBtn" title="Switch to Dark Mode">🌙</button>
+</header>
+
+<section class="hero">
+  <h2 id="typing"></h2>
+  <p>Computer Science Database Management Student • Aspiring Data Analyst • Interested in System Analysis & Data-Driven Solutions</p>
+  <button onclick="scrollToSection('contact')">Contact Me</button>
+</section>
+
+<section id="about" class="card">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="myphoto.jpg" alt="Siti Nuratiqah">
+    <p>
+      <p>
+I am a Computer Science Database Management student with a strong interest in data, systems, and technology.<br><br>
+
+I am currently developing my knowledge and skills in managing data, understanding system processes, and building practical solutions through my academic projects.<br><br>
+
+I am motivated to continuously learn and improve as I prepare for future opportunities in the technology field.
+</p>
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="card">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:75%"></div></div>
+  </div>
+</section>
+
+<section id="projects" class="card">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    <div class="project">
+      <h3>Kitchen Cabinet System</h3>
+      <p>System for managing cabinet orders and bookings.</p>
+    </div>
+
+    <div class="project">
+  <h3>🐾 Stray Animal Shelter Management System</h3>
+
+  <p>
+    A database-driven web system designed to streamline stray animal management, 
+    from reporting and rescue to adoption and medical tracking.
+  </p>
+
+  <ul>
+    <li>✔ Centralized animal records & medical history</li>
+    <li>✔ Real-time stray reporting system</li>
+    <li>✔ Adoption & booking management</li>
+    <li>✔ Multi-user roles (Admin, Public, Caretaker, Adopter)</li>
+  </ul>
+
+  <p class="tech">
+    💻 Tech: MySQL • PostgreSQL • SQL Server • Web System
+  </p>
+</div>
+</section>
+
+<section id="contact" class="card">
+  <h2>Contact Me</h2>
+
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <input type="email" id="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <input type="submit" value="Send Message">
+  </form>
+
+  <button onclick="showTime()">Show Current Time</button>
+  <p id="time"></p>
+
+  <p>
+    Visit:
+    <a href="https://www.utem.edu.my" target="_blank">UTeM</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Siti Nuratiqah</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
