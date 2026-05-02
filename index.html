@@ -6,9 +6,7 @@
 
 <title>Siti Nuratiqah | Portfolio</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,86 +14,157 @@
 
 <header class="header">
   <h1>Siti Nuratiqah</h1>
+
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <button id="modeBtn" title="Switch to Dark Mode">🌙</button>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h2 id="typing"></h2>
-  <p>Computer Science Database Management Student • Aspiring Data Analyst • Interested in System Analysis & Data-Driven Solutions</p>
+
+  <p>
+    Computer Science Database Management Student • Aspiring Data Analyst • 
+    Interested in System Analysis & Data-Driven Solutions
+  </p>
+
   <button onclick="scrollToSection('contact')">Contact Me</button>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="card">
   <h2>About Me</h2>
+
   <div class="about-container">
     <img src="myphoto.jpg" alt="Siti Nuratiqah">
-    <p>
+
+    <div class="about-text">
       <p>
-I am a Computer Science Database Management student with a strong interest in data, systems, and technology.<br><br>
+        I am a Computer Science Database Management student with a strong interest in data, systems, and technology.
+      </p>
 
-I am currently developing my knowledge and skills in managing data, understanding system processes, and building practical solutions through my academic projects.<br><br>
+      <p>
+        I am currently developing my knowledge and skills in managing data, understanding system processes, 
+        and building practical solutions through my academic projects.
+      </p>
 
-I am motivated to continuously learn and improve as I prepare for future opportunities in the technology field.
-</p>
-    </p>
+      <p>
+        I am motivated to continuously learn and improve as I prepare for future opportunities in the technology field.
+      </p>
+    </div>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="card">
   <h2>Skills</h2>
 
   <div class="skill">
-    <p>HTML</p>
-    <div class="bar"><div style="width:90%"></div></div>
-  </div>
-
-  <div class="skill">
-    <p>CSS</p>
+    <p>SQL / Database Management</p>
     <div class="bar"><div style="width:85%"></div></div>
   </div>
 
   <div class="skill">
-    <p>JavaScript</p>
+    <p>Oracle APEX</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>C++ Programming</p>
     <div class="bar"><div style="width:75%"></div></div>
   </div>
+
+  <div class="skill">
+    <p>HTML, CSS, JavaScript</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <h3 style="margin-top:25px;">Soft Skills</h3>
+  <ul>
+    <li>✔ Time Management</li>
+    <li>✔ Teamwork & Collaboration</li>
+    <li>✔ Problem Solving</li>
+    <li>✔ Communication Skills</li>
+  </ul>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="card">
   <h2>Projects</h2>
 
   <div class="project-grid">
+
+    <!-- PROJECT 1 -->
     <div class="project">
-      <h3>Kitchen Cabinet System</h3>
-      <p>System for managing cabinet orders and bookings.</p>
+      <h3>🐾 Stray Animal Shelter Management System</h3>
+
+      <p>
+        A database-driven web system designed to streamline stray animal management 
+        from reporting and rescue to adoption and medical tracking.
+      </p>
+
+      <ul>
+        <li>✔ Centralized animal records & medical history</li>
+        <li>✔ Real-time stray reporting system</li>
+        <li>✔ Adoption & booking management</li>
+        <li>✔ Multi-user roles (Admin, Public, Caretaker, Adopter)</li>
+      </ul>
+
+      <p class="tech">
+        💻 Tech: MySQL • PostgreSQL • SQL Server • Web System
+      </p>
     </div>
 
+    <!-- PROJECT 2 -->
     <div class="project">
-  <h3>🐾 Stray Animal Shelter Management System</h3>
+      <h3>📚 Online Bookstore (SULAM)</h3>
 
-  <p>
-    A database-driven web system designed to streamline stray animal management, 
-    from reporting and rescue to adoption and medical tracking.
-  </p>
+      <p>
+        A database-driven system developed using Oracle APEX to manage bookstore 
+        operations including data entry, reporting, and user interaction.
+      </p>
 
-  <ul>
-    <li>✔ Centralized animal records & medical history</li>
-    <li>✔ Real-time stray reporting system</li>
-    <li>✔ Adoption & booking management</li>
-    <li>✔ Multi-user roles (Admin, Public, Caretaker, Adopter)</li>
-  </ul>
+      <ul>
+        <li>✔ Database design (ERD, DFD, Data Dictionary)</li>
+        <li>✔ CRUD operations & reporting</li>
+        <li>✔ Real-world collaboration project</li>
+      </ul>
 
-  <p class="tech">
-    💻 Tech: MySQL • PostgreSQL • SQL Server • Web System
-  </p>
-</div>
+      <p class="tech">
+        💻 Tech: Oracle APEX • SQL • Database Design
+      </p>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project">
+      <h3>💻 Workshop 1 Project (C++)</h3>
+
+      <p>
+        A standalone system developed in C++ for managing a retail service system 
+        with login, user roles, and database integration.
+      </p>
+
+      <ul>
+        <li>✔ Login & user management</li>
+        <li>✔ Staff & customer system</li>
+        <li>✔ Database integration using XAMPP</li>
+      </ul>
+
+      <p class="tech">
+        💻 Tech: C++ • MySQL • XAMPP
+      </p>
+    </div>
+
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="card">
   <h2>Contact Me</h2>
 
@@ -115,8 +184,9 @@ I am motivated to continuously learn and improve as I prepare for future opportu
   </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Siti Nuratiqah</p>
+  <p>© 2026 Siti Nuratiqah Abu Bakar</p>
 </footer>
 
 <script src="script.js"></script>

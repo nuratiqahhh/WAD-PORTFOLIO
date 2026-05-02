@@ -1,8 +1,10 @@
+/* ===================== */
 /* GENERAL */
+/* ===================== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f9f9f9;
+  background: #f5f6fa;
   color: #333;
   transition: 0.3s;
 }
@@ -11,7 +13,9 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
+/* ===================== */
 /* HEADER */
+/* ===================== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -31,7 +35,9 @@ nav a:hover {
   color: #ff6b81;
 }
 
+/* ===================== */
 /* HERO */
+/* ===================== */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -41,23 +47,23 @@ nav a:hover {
   font-size: 36px;
 }
 
-/* NAME */
-.name {
-  color: #ff6b81;
-  font-weight: 600;
-}
-
+/* ===================== */
 /* CARD */
+/* ===================== */
 .card {
   margin: 30px auto;
   width: 80%;
   padding: 30px;
-  background: white;
+  background: #ffffff;
   border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
   transition: 0.3s;
 }
 
+/* ===================== */
 /* ABOUT */
+/* ===================== */
 .about-container {
   display: flex;
   align-items: center;
@@ -65,12 +71,23 @@ nav a:hover {
 }
 
 .about-text {
-  max-width: 500px;
+  max-width: 520px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #ff6b81;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.about-text:hover {
+  transform: translateY(-3px);
 }
 
 .about-text p {
-  margin-bottom: 15px;
-  line-height: 1.8;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  font-size: 15px;
 }
 
 /* IMAGE */
@@ -79,14 +96,13 @@ img {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #ff6b81;
+  border: 4px solid #ff6b81;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* ===================== */
-/* 💥 PROJECT SECTION UPGRADE */
+/* PROJECTS */
 /* ===================== */
-
 .project-grid {
   display: flex;
   gap: 25px;
@@ -104,24 +120,20 @@ img {
   overflow: hidden;
 }
 
-/* HOVER EFFECT */
 .project:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-/* TITLE */
 .project h3 {
   margin-bottom: 10px;
   color: #ff6b81;
 }
 
-/* DESCRIPTION */
 .project p {
   line-height: 1.6;
 }
 
-/* LIST */
 .project ul {
   padding-left: 20px;
   margin: 10px 0;
@@ -131,7 +143,6 @@ img {
   margin-bottom: 5px;
 }
 
-/* TECH STACK */
 .project .tech {
   margin-top: 10px;
   font-size: 14px;
@@ -171,8 +182,28 @@ img {
   background: linear-gradient(to right, #ff6b81, #f78fb3);
 }
 
+/* Soft skills */
+#skills ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#skills ul li {
+  margin-bottom: 6px;
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+
+#skills ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6b81;
+}
+
 /* ===================== */
-/* FORM INPUT */
+/* FORM */
 /* ===================== */
 input, textarea {
   width: 60%;
@@ -183,7 +214,7 @@ input, textarea {
 }
 
 /* ===================== */
-/* 🔘 MODE BUTTON */
+/* MODE BUTTON */
 /* ===================== */
 #modeBtn {
   width: 45px;
@@ -208,7 +239,7 @@ input, textarea {
 }
 
 /* ===================== */
-/* CONTACT FIX */
+/* CONTACT */
 /* ===================== */
 #contact {
   text-align: center;
@@ -220,15 +251,11 @@ input, textarea {
   margin: 10px auto;
 }
 
-/* SAME WIDTH */
 form input[type="submit"],
 #contact button {
   width: 60%;
 }
 
-/* ===================== */
-/* ✨ SEND BUTTON */
-/* ===================== */
 form input[type="submit"] {
   padding: 12px;
   margin-top: 10px;
@@ -265,7 +292,9 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* ===================== */
 /* FOOTER */
+/* ===================== */
 footer {
   text-align: center;
   padding: 20px;
@@ -281,10 +310,31 @@ footer {
 
 .dark nav a {
   color: #ddd;
+  transition: 0.3s;
+}
+
+.dark nav a:hover {
+  color: #ff6b81;
+}
+
+.dark nav a::after {
+  background: #ff6b81;
 }
 
 .dark .card {
   background: #1e1e1e;
+}
+
+/* 🔥 IMPORTANT FIX (YOUR ISSUE) */
+.dark .about-text {
+  background: #1e1e1e;
+  color: #eee;
+  border-left: 4px solid #ff6b81;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.dark .about-text p {
+  color: #ddd;
 }
 
 .dark .project {
@@ -312,5 +362,5 @@ footer {
 }
 
 .dark img {
-  border: 5px solid #ff6b81;
+  border: 4px solid #ff6b81;
 }
