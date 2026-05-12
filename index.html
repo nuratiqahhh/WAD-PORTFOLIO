@@ -19,6 +19,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#academic">Academic</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -87,11 +88,62 @@
   </div>
 
   <h3 style="margin-top:25px;">Soft Skills</h3>
+
   <ul>
     <li>Problem Solving</li>
     <li>Time Management</li>
     <li>Teamwork & Collaboration</li>
   </ul>
+</section>
+
+<!-- ACADEMIC -->
+<section id="academic" class="card">
+  <h2>Academic Background</h2>
+
+  <div class="academic-grid">
+
+    <!-- UTeM -->
+    <div class="academic-item">
+      <img src="utem.png" alt="UTeM" class="academic-img">
+
+      <div>
+        <h3>Universiti Teknikal Malaysia Melaka (UTeM)</h3>
+
+        <p>
+          Bachelor of Computer Science (Database Management)
+        </p>
+
+        <span>2023 - Present</span>
+      </div>
+    </div>
+
+    <!-- SMKTU -->
+    <div class="academic-item">
+      <img src="smktu.png" alt="SMKTU" class="academic-img">
+
+      <div>
+        <h3>SMK Tasik Utara</h3>
+
+        <p>STPM Graduate</p>
+
+        <span>2021 - 2023</span>
+      </div>
+    </div>
+
+    <!-- SMKBBU -->
+    <div class="academic-item">
+      <img src="smkbbu.png" alt="SMKBBU" class="academic-img">
+
+      <div>
+        <h3>SMK Bandar Baru Uda</h3>
+
+        <p>SPM Graduate</p>
+
+        <span>2016 - 2020</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- PROJECTS -->
@@ -106,7 +158,7 @@
 
       <span class="tag">Web System</span>
 
-      <h3>Stray Animal Shelter Management System</h3>
+      <h3>🐾 Stray Animal Shelter Management System</h3>
 
       <p>
         A database-driven web system designed to streamline stray animal management 
@@ -131,7 +183,7 @@
 
       <span class="tag">Database System</span>
 
-      <h3>Online Bookstore (SULAM)</h3>
+      <h3>📚 Online Bookstore (SULAM)</h3>
 
       <p>
         A database-driven system developed using Oracle APEX to manage bookstore 
@@ -147,6 +199,15 @@
       <p class="tech">
         Oracle APEX • SQL • Database Design
       </p>
+
+      <a href="https://www.canva.com/design/DAGIR1jyqzs/d2WfGJ0Z5wvqUERVkjhlBA/edit?utm_content=DAGIR1jyqzs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+         target="_blank"
+         class="project-link">
+
+         🔗 View SULAM Presentation
+
+      </a>
+
     </div>
 
     <!-- PROJECT 3 -->
@@ -155,7 +216,7 @@
 
       <span class="tag">Console App</span>
 
-      <h3>EasyRent Car Rental System</h3>
+      <h3>🚗 EasyRent Car Rental System</h3>
 
       <p>
         A standalone system developed in C++ for managing a retail service system 
@@ -173,6 +234,40 @@
       </p>
     </div>
 
+    <!-- PROJECT 4 -->
+    <div class="project">
+
+      <img src="M.png" alt="Multimedia Project" class="project-img">
+
+      <span class="tag">Multimedia Project</span>
+
+      <h3>🎬 Exam Month at UTeM</h3>
+
+      <p>
+        A multimedia group project developed to illustrate the challenges faced by university students during examination periods through animation and storytelling.
+      </p>
+
+      <ul>
+        <li>Storyboarding & content planning</li>
+        <li>Animation and video production</li>
+        <li>Audio editing and visual effects</li>
+        <li>Team collaboration project</li>
+      </ul>
+
+      <p class="tech">
+        Adobe Animate • Multimedia Design • Video Editing
+      </p>
+
+      <a href="https://youtu.be/7-bfJHXG9U4?feature=shared"
+         target="_blank"
+         class="project-link">
+
+         🎥 Watch Multimedia Project
+
+      </a>
+
+    </div>
+
   </div>
 </section>
 
@@ -182,12 +277,16 @@
 
   <form onsubmit="return validateForm()">
     <input type="text" id="name" placeholder="Your Name"><br>
+
     <input type="email" id="email" placeholder="Your Email"><br>
+
     <textarea placeholder="Message"></textarea><br>
+
     <input type="submit" value="Send Message">
   </form>
 
   <button onclick="showTime()">Show Current Time</button>
+
   <p id="time"></p>
 
   <p>

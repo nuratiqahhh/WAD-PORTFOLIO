@@ -122,6 +122,7 @@ nav a:hover::after {
 .about-text p {
   line-height: 1.9;
   margin-bottom: 18px;
+  text-align: justify;
 }
 
 /* IMAGE */
@@ -132,6 +133,58 @@ img {
   border-radius: 50%;
   border: 4px solid #ff6b81;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===================== */
+/* 🎓 ACADEMIC SECTION */
+/* ===================== */
+
+.academic-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.academic-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+
+  border: 1px solid #eee;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+.academic-item:hover {
+  transform: translateY(-5px);
+}
+
+.academic-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+
+  border-radius: 12px;
+  background: white;
+  padding: 10px;
+
+  border: none;
+  box-shadow: none;
+}
+
+.academic-item h3 {
+  margin-bottom: 8px;
+  color: #ff6b81;
+}
+
+.academic-item span {
+  font-size: 13px;
+  color: #777;
 }
 
 /* PROJECTS */
@@ -179,7 +232,7 @@ img {
   color: #777;
 }
 
-/* IMAGE */
+/* PROJECT IMAGE */
 .project-img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -195,18 +248,25 @@ img {
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
+  font-weight: 500;
 }
 
 /* SKILLS */
+.skill {
+  margin-bottom: 18px;
+}
+
 .bar {
   background: #ddd;
   height: 10px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .bar div {
   height: 10px;
   background: linear-gradient(to right, #ff6b81, #f78fb3);
+  border-radius: 5px;
 }
 
 /* FORM */
@@ -227,22 +287,24 @@ input, textarea {
   background: #ff6b81;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+#modeBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 
 /* CONTACT */
-/* Center content nicely */
 #contact {
   text-align: center;
 }
 
-/* Form container */
 #contact form {
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* INPUT & TEXTAREA */
 #contact input,
 #contact textarea {
   width: 100%;
@@ -258,7 +320,6 @@ input, textarea {
   transition: all 0.3s ease;
 }
 
-/* Focus effect */
 #contact input:focus,
 #contact textarea:focus {
   outline: none;
@@ -266,7 +327,6 @@ input, textarea {
   box-shadow: 0 0 8px rgba(255,107,129,0.3);
 }
 
-/* TEXTAREA HEIGHT */
 #contact textarea {
   min-height: 120px;
   resize: none;
@@ -292,19 +352,17 @@ input, textarea {
   transition: all 0.3s ease;
 }
 
-/* HOVER EFFECT */
 #contact input[type="submit"]:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2),
               0 0 10px rgba(255,107,129,0.4);
 }
 
-/* CLICK EFFECT */
 #contact input[type="submit"]:active {
   transform: translateY(1px);
 }
 
-/* SECOND BUTTON (TIME) */
+/* TIME BUTTON */
 #contact button {
   width: 200px;
   padding: 10px;
@@ -325,14 +383,14 @@ input, textarea {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* TIME TEXT */
+/* TIME */
 #time {
   margin-top: 10px;
   font-size: 14px;
   color: #666;
 }
 
-/* LINK STYLE */
+/* CONTACT LINK */
 #contact a {
   color: #ff6b81;
   font-weight: 500;
@@ -342,7 +400,6 @@ input, textarea {
 #contact a:hover {
   text-decoration: underline;
 }
-
 
 /* ✔ SOFT SKILLS TICKS */
 #skills ul {
@@ -358,7 +415,6 @@ input, textarea {
   font-size: 15px;
 }
 
-/* custom tick */
 #skills ul li::before {
   content: "✔";
   position: absolute;
@@ -367,26 +423,80 @@ input, textarea {
   font-weight: bold;
 }
 
-/* DARK MODE */
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* ===================== */
+/* 🌙 DARK MODE */
+/* ===================== */
+
 .dark {
   background: #111;
   color: white;
 }
 
+/* NAV FIX */
+.dark nav a {
+  color: #f5f5f5;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.dark nav a:hover {
+  color: #ff6b81;
+  opacity: 1;
+}
+
+/* CARD */
 .dark .card {
   background: #1e1e1e;
+  border: 1px solid #333;
 }
 
-.dark .project {
-  background: #1e1e1e;
-}
-
+/* ABOUT */
 .dark .about-text {
-  background: #1e1e1e;
+  background: #2a2a2a;
+  color: white;
 }
 
+/* PROJECT */
+.dark .project {
+  background: #2a2a2a;
+  border: 1px solid #333;
+}
+
+.dark .project .tech {
+  color: #bbb;
+}
+
+/* ACADEMIC */
+.dark .academic-item {
+  background: #2a2a2a;
+  border: 1px solid #333;
+}
+
+.dark .academic-item span {
+  color: #bbb;
+}
+
+/* FORM */
 .dark input,
 .dark textarea {
   background: #2a2a2a;
   color: white;
+  border: 1px solid #555;
+}
+
+/* TIME */
+.dark #time {
+  color: #ccc;
+}
+
+/* IMAGE */
+.dark img {
+  border: 4px solid #ff6b81;
 }
